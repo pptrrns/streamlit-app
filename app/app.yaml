@@ -1,0 +1,21 @@
+command: [
+  "streamlit", 
+  "run",
+  "app.py"
+]
+
+env:
+  - name: "DATABRICKS_INSTANCE"
+    value: "https://adb-6244090922410841.1.azuredatabricks.net"
+  - name: "DATABRICKS_JOB_ID"
+    valueFrom: "DATABRICKS_JOB_ID"
+  - name: "ENV"
+    valueFrom: "ENV"
+  - name: "SCOPE"
+    valueFrom: "SCOPE"
+  - name: "DATABRICKS_WAREHOUSE_ID"
+    valueFrom: "sql-warehouse"
+  - name: STREAMLIT_BROWSER_GATHER_USAGE_STATS
+    value: "false"
+  - name: DATABRICKS_PROPOSAL_JOB_ID
+    valueFrom: "DATABRICKS_PROPOSAL_JOB_ID"

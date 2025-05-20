@@ -1,0 +1,15 @@
+import os
+
+HOME_PAGE = "pages/0_home.py"
+
+DATABRICKS_INSTANCE = os.getenv('DATABRICKS_INSTANCE')
+
+DATABRICKS_WAREHOUSE_ID = os.getenv('DATABRICKS_WAREHOUSE_ID')
+
+DEFAULT_QUERY_LIMIT = 100
+
+SCOPE = os.getenv('SCOPE')
+
+ENV = os.getenv('ENV')
+
+PERSONAL_ACCESS_TOKEN = "dapixxxxx"
